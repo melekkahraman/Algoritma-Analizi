@@ -40,10 +40,10 @@ var x=0;
 while(x<80){
 baslangic();
 fibonacci();
-document.write(x+". siradaki fibonacci sayisi: "+fibonacci(x)+"<br/>");
+console.log(x+". siradaki fibonacci sayisi: "+fibonacci(x)+"<br/>");
 bitis();
-document.write("Baslangic zamani"+baslangic+"<br/>");
-document.write("Bitis zamani"+bitis+"<br/>");
+console.log("Baslangic zamani"+baslangic+"<br/>");
+console.log("Bitis zamani"+bitis+"<br/>");
 x=x+10;
 }
 
