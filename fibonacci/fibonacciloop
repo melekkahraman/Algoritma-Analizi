@@ -1,0 +1,54 @@
+<script type="text/javascript">
+var baslangic;
+var bitis;
+var result = new Array(4);
+var rt = new Array(4);
+function baslangic(){
+var stime = new Date();
+rt[0] = stime.getHours();
+rt[1] = stime.getMinutes();
+rt[2] = stime.getSeconds();
+rt[3] = stime.getMilliseconds();
+baslangic=rt[0]+"/"+rt[1]+"/"+rt[2]+"/"+rt[3];
+}
+function bitis(){
+var ftime = new Date();
+result[0] = ftime.getHours();
+result[1] = ftime.getMinutes();
+result[2] = ftime.getSeconds();
+result[3] = ftime.getMilliseconds();
+bitis=result[0]+"/"+result[1]+"/"+result[2]+"/"+result[3];
+}
+
+function fibonacci(sira)
+{
+  var dizi = new Array(0,1);
+   var i=0;
+
+  
+  while(i<sira)
+  {
+    //istenen sıraya kadar doldur
+    dizi.push(dizi[i]+dizi[i+1]);
+    i=i+1;
+  
+
+}
+  return dizi[sira];
+}
+var x=0;
+
+while (x<80){
+baslangic();
+document.write(x+". siradaki fibonacci sayisi: "+fibonacci(x)+"<br/>");
+bitis();
+document.write("Baslangic zamani"+baslangic+"<br/>");
+document.write("Bitis zamani"+bitis+"<br/>");
+
+x=x+10;
+
+
+}
+
+
+</script>
