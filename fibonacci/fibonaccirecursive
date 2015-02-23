@@ -40,7 +40,7 @@ var x=0;
 while(x<80){
 baslangic();
 fibonacci();
-console.log(x+". siradaki fibonacci sayisi: "+fibonacci(x)+"<br/>");
+console.log(x+". siradaki fibonacci sayisi: "+fibonacci(x-1)+fibonacci(x-2)+"<br/>");
 bitis();
 console.log("Baslangic zamani"+baslangic+"<br/>");
 console.log("Bitis zamani"+bitis+"<br/>");
