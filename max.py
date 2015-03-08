@@ -5,7 +5,7 @@ length=0
 array=[]
 x='x'
 while True:
-  eleman=input('Lütfen eklemek istediğiniz sayiyi giriniz. Çıkış için x e basiniz')
+  element=input('Lütfen eklemek istediğiniz sayiyi giriniz. Çıkış için x e basiniz')
   if element==x:
       break;
   else:
