@@ -6,11 +6,11 @@ array=[]
 x='x'
 while True:
   eleman=input('Lütfen eklemek istediğiniz sayiyi giriniz. Çıkış için x e basiniz')
-  if eleman==x:
+  if element==x:
       break;
   else:
       length=length+1
-      array.append(eleman)
+      array.append(element)
 
 max=array[0]
 i=1
