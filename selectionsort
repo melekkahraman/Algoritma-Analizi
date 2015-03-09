@@ -1,0 +1,47 @@
+import java.util.Random;
+
+public class sel {
+	
+	public static void main1(String[] args) {
+	int a[]=new int[100];
+	Random r = new Random();
+   
+    
+     
+    //olusturdugumuz ilk diziye random sayilar atayalim.
+    for (int i = 0; i < 10; i++) {
+        //0 ile 99 arasinda rasgele sayi uretip diziye ekliyoruz
+        a[i]=r.nextInt(10);
+         
+    }
+   // System.out.println("\nFinal result:"+Arrays.toString(CrunchifyBubbleSortAsceMethod(a)));
+	
+	
+	int x=0;
+	int y=0;
+	// public static int[] CrunchifyBubbleSortAsceMethod(int[] a){
+	 
+	 int yedek;
+	 int minIndex;
+	 
+	 for(int i=0; i< a.length; i++)
+	 {
+	 minIndex=i;
+	 for(int j=i; j<a.length; j++)
+	 {
+		 x=x+1;
+	 if (a[j] < a[minIndex]) minIndex=j; y=y+1;
+	 }
+	 yedek=a[i];
+	 a[i]=a[minIndex];
+	 a[minIndex]=yedek;
+	 System.out.println(x);
+	 System.out.println(y);
+	 }
+	 }
+	
+	
+	//return a;
+
+}
+
