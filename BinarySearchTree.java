@@ -1,4 +1,53 @@
 import java.util.*;
+package bst;
+import java.util.*;
+
+public class BST <T extends Comparable<T>> implements Iterable<T>
+{
+   public static int cost = 0;
+   public static void main(String[] args)
+   {
+       
+      Integer[] a = new Integer[100000];
+      Random r = new Random();
+      for (int i = 0; i < 100000; i++)    
+                a[i]=r.nextInt(100000);
+      
+      BST<Integer> bst = new BST<Integer>();
+      for(Integer n : a) bst.insert(n);
+
+      bst.preOrderTraversal();
+      System.out.println();
+
+       
+      bst.search(r.nextInt(1000));
+      
+       System.out.println("Maaliyet = " + cost);
+      
+   }
+
+
+   private Node<T> root;
+   private Comparator<T> comparator;
+
+   public BST()
+   {
+      root = null;
+      comparator = null;
+   }
+
+   public BST(Comparator<T> comp)
+   {
+      root = null;
+      comparator = comp;
+   }
+
+   private int compare(T x, T y)
+   {
+      if(comparator == null) return x.compareTo(y);
+      else
+      return comparator.compare(x,y);
+   }
 
 public class BST <T extends Comparable<T>> implements Iterable<T>
 {
