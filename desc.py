@@ -3,7 +3,7 @@
 import random
 length=0
 i=1
-x=0
+y=0
 array=[]
 x='x'
 while True:
@@ -13,14 +13,14 @@ while True:
   else:
       length=length+1
       array.append(element)
-if x<array.length
-max=array[x]
+if y<array.length
+max=array[y]
 while i<length:
    if array[i]>=max:
        max=array[i]
    i=i+1
 array[i]=max
-x=x+1
+y=y+1
 
 i=input('Bulmak istediginiz dizi elemaninin sirasini giriniz')
 
