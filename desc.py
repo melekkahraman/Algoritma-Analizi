@@ -2,7 +2,7 @@
 #!-*coding:utf-8-*-
 import random
 length=0
-i=1
+i=1 
 y=0
 array=[]
 x='x'
