@@ -21,11 +21,11 @@ public class resize {
 		System.out.print("Dizi={");
 		for (int i=0; i<boyut; i++) {
                     System.out.print(dizi[i]);
-                        if(i!=boyut-1){
-			   System.out.print(","+" ");
-			}
-            a=a+1;
-            }
+                    if(i!=boyut-1){
+		       System.out.print(","+" ");
+	       	    }
+                a=a+1;
+             }
 		System.out.println("}");
 		System.out.println("Tersten yazılmış dizi");
 		System.out.print("Dizi={");
