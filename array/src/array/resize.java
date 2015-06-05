@@ -2,8 +2,8 @@ package array;
 import java.util.Scanner;
 import java.util.Random;
 public class resize {
-	static int[] dizi = new int[10];
 	public static void main(String[] args) {
+		int[] dizi = new int[10];
 		int boyut;
 		Scanner scan = new Scanner(System.in );
 		System.out.println("Oluşturmak istediğiniz dizi boyutunu girin");
