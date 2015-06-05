@@ -3,8 +3,8 @@ package array;
 import java.util.Scanner;
 
 public class altdizi {
-	static int[] dizi ={1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0};
 	public static void main(String[] args) {
+		int[] dizi ={1,0,0,1,0,0,0,0,0,0,0,1,1,0,0,0,0,0};
 		int uzunluk=dizi.length;
 		int[] sayac =new int[uzunluk];
 		int j=0;
