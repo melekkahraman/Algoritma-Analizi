@@ -25,7 +25,7 @@ public class resize {
                      if(i!=boyut-1){
 	                System.out.print(","+" ");
 	             }
-                     a=a+1;
+                     a=a+1; 
                 }
 		System.out.println("}");
 		System.out.println("Tersten yazılmış dizi");
